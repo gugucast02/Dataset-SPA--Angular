@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0",
+    "chart.js": "^4.3.0",
+    "feather-icons": "^4.29.0"
+  },
+  "devDependencies": {
+    "@types/feather-icons": "^4.29.1"
+  }
+}

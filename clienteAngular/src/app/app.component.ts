@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Chart } from 'chart.js';
+import * as feather from 'feather-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,3 +10,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'clienteAngular';
 }
+/* globals Chart:false, feather:false */
+
