@@ -1,1 +1,50 @@
-<p>calltoaction works!</p>
+<style>
+    .table-container {
+      width: 100%;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de tamaño igual */
+      grid-gap: 0; /* Elimina el espacio entre celdas */
+    }
+  
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    .table-container th, .table-container td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .table-container th {
+      font-weight: bold;
+    }
+  
+    .table-container tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+  
+  <div class="table table-striped table-sm">
+    <table>
+      <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Header</th>
+            <th scope="col">Header</th>
+            <th scope="col">Header</th>
+            <th scope="col">Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let datum of data">
+          <td>{{ datum["Category"] }}</td>
+          <td>{{ datum["Product Type"] }}</td>
+          <td>{{ datum['Product Line Item'] }}</td>
+          <td>{{ datum[ "Product Price" ] }}</td>
+        </tr>
+      </tbody>
+    </table>
+   

@@ -11,6 +11,7 @@ import { PortfolioComponent } from './port/portfolio/portfolio.component';
 import { CalltoactionComponent } from './call/calltoaction/calltoaction.component';
 import { ContactComponent } from './cont/contact/contact.component';
 import { FooterComponent } from './foot/footer/footer.component';
+import { HttpClientModule } from  '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,12 @@ import { FooterComponent } from './foot/footer/footer.component';
     CalltoactionComponent,
     ContactComponent,
     FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
