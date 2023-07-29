@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
-
-//Importación de la interfaz
-//Importación del servicio
-import { user } from './../../interfaces/lector';
 import { ProveedorService } from './../../provides/proveedor.service';
-
+import { Root2 } from './../../interfaces/lector';
 
 @Component({
   selector: 'app-calltoaction',
@@ -12,14 +8,16 @@ import { ProveedorService } from './../../provides/proveedor.service';
   styleUrls: ['./calltoaction.component.css']
 })
 export class CalltoactionComponent {
-  constructor(private dataProvider: ProveedorService) { }
-      public data : user[] = [];
+  public data: Root2[] = [];
+  public datos: Root2[] = [];
 
+  constructor(private dataProvider: ProveedorService) {}
 
-      ngOnInit() {
-        this.dataProvider.getResponse().subscribe((response) => { 
-          this.data = (response as user[]); 
-        })
-      }
-
+  ngOnInit() {
+    this.dataProvider.getResponse().subscribe((response) => {
+      this.data = (response as Root2[]).slice(0, 100);
+    });
+  }
 }
+
+
