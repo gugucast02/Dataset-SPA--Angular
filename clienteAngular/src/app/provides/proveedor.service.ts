@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 
-
-
 //Importación del HttpClient
 import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
 export class ProveedorService {
-  private URL: string = 'https://landing-a5050-default-rtdb.firebaseio.com/Collection.json';
+  private URL: string = 'https://matchsoccer-9bccb-default-rtdb.firebaseio.com/collection.json';
+
   getResponse() {
     return this.http.get(this.URL);
 }

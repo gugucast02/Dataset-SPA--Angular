@@ -1,0 +1,33 @@
+body {
+ margin: 0;
+ height: 100vh;
+ display: grid;
+ place-items: center;
+ background-color: #111;
+}
+.img-container{
+    display: flex;
+}
+.img-container img{
+    margin: 1rem;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid #000; /* Cambia el color (#000) y el grosor (2px) según tus preferencias */
+    padding: 5px; /* Opcional, para agregar un espacio entre la imagen y el borde */
+    display: inline-block; /* Opcional, para que el marco se ajuste al tamaño de la imagen */
+    background-color: aquamarine;
+}
+.img-container img:not(:last-child){
+    margin-right: 10px;
+}
+.img-container:hover > :not(:hover) {
+    opacity: 0.2;
+}
+#peru{
+    padding: 0.5rem;
+}
+

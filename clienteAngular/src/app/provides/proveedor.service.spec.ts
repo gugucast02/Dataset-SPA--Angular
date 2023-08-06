@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { ProveedorService } from './proveedor.service';
 import { HttpClientModule } from '@angular/common/http';
-import { user} from '../interfaces/lector';
+import { Root2} from '../interfaces/lector';
 
 
   describe('ProveedorService', () => {
@@ -30,7 +30,7 @@ import { user} from '../interfaces/lector';
       service.getResponse().subscribe(data => {
 	      
         // Valide que la respuesta sea mayor que 0
-        expect((data as user[]).length).toBeGreaterThan(0)
+        expect((data as Root2[]).length).toBeGreaterThan(0)
 	      
         // Que espere hasta que llegue la respuesta 
         done();

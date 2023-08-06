@@ -1,22 +1,20 @@
-export interface user {
-    Category: string
-    "EAN Code": string
-    "Product Line": string
-    "Product Line Item": string
-    "Product Price": string
-    "Product Type": string
-    "Sub-Cateogry": string
-    field1: string
-  }
-export type Root = Root2[]
-
 export interface Root2 {
-  field1: string
-  Category: string
-  "Sub-Cateogry": string
-  "Product Type": string
-  "Product Line": string
-  "Product Line Item": string
-  "Product Price": string
-  "EAN Code": string
+  id: number
+  country_name: string
+  league_name: string
+  season: string
+  stage: number
+  date: string
+  home_team: string
+  away_team: string
+  home_team_goal: number
+  away_team_goal: number
+  B365H: string
+  B365D: string
+  B365A: string
+  BSH: string
+  BSD: string
+  BSA: string
+  diff_goals: number
+  target: number
 }

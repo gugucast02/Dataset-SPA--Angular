@@ -1,0 +1,39 @@
+<p class="h1 text-primary"  >Two Football</p>  
+<div class="img-container">
+    <img src="https://images.freeimages.com/vme/images/4/2/421394/flag_of_france_preview" alt="Descripción de la imagen" (click)="onImageClick('France')">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAElBMVEX////cFDz0wcnaACrcDTneLks3GRJRAAAAoElEQVR4nO3cQRGDABDAwCsU/5Zx0GeZHLsOYiAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8MOx3ZzbzWc7hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPY94LC73Zzbff0HgcAAAAAAADgf27Se08b5UozCAAAAABJRU5ErkJggg==" alt="Descripción de la imagen" (click)="onImageClick('Poland')">
+    <img src="https://www.iconarchive.com/download/i109070/wikipedia/flags/BE-Belgium-Flag.1024.png" alt="Descripción de la imagen" (click)="onImageClick('Belgium')">
+    <img src="https://img.asmedia.epimg.net/resizer/YxNwM6mv9vxKfDtALYhJKXSidkE=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/HT4TFMW3CFCTXBQVM22XCMNF2Q.jpg" alt="Descripción de la imagen" id="peru" (click)="onImageClick('England')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/2560px-Flag_of_Portugal.svg.png" alt="Descripción de la imagen" (click)="onImageClick('Portugal')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1280px-Flag_of_Scotland.svg.png" alt="Descripción de la imagen" (click)="onImageClick('Scotland')">
+    <img src="https://www.historia.com/wp-content/uploads/2017/04/Bandera-de-Espa%C3%B1a.png" alt="Descripción de la imagen" (click)="onImageClick('Spain')">
+
+  </div>
+<p class="h2 text-success">Encuentros en la Federacion de {{country}}</p>
+<div>
+    <table class="table table-striped table-sm" >
+      <thead>
+        <tr>
+            <th>Equipo Local</th>
+            <th >Equipo visitante</th>
+            <th >Goles Local</th>
+            <th>Goles Visita</th>
+            <th>Tarjetas</th>
+            <th >Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let datum of data1">
+          <td>{{ datum['home_team'] }}</td>
+          <td >{{ datum['away_team'] }}</td>
+          <td >{{ datum[ "home_team_goal"] }}</td>
+          <td >{{ datum[ "away_team_goal" ] }}</td>
+          <td >{{ datum[ "target" ] }}</td>
+          <td >{{ datum[ 'date' ] }}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+

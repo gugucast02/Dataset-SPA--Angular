@@ -1,0 +1,21 @@
+.navbar{
+    justify-content: space-between;
+    width: 100%;
+}
+#navbarSupportedContent {
+    justify-content: space-between;
+    width: 100%;
+}
+.form-inline {
+    display: flex;
+    justify-content: space-between;
+}
+.form-inline.btn {
+    padding-left: 1rem;
+}
+.form-inline.form-control{
+    padding-right: 2rem;
+}
+.button{
+    padding-left: 10rem;
+}
